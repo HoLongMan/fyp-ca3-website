@@ -2,129 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EggmanRemixedHK | The Energetic East</title>
+  <title>EggManRemixed | The Energetic East</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Montserrat', Arial, sans-serif;
-      background: #fff;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #fff;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .container {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 16px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2em;
-      flex-wrap: wrap;
-      padding: 24px 0 0 0;
-    }
-    nav a {
-      color: #555;
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      font-size: 1.05em;
-      transition: color 0.15s;
-    }
-    nav a:hover {
-      color: #d94e4e;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 16px;
-      letter-spacing: 0.04em;
-      color: #2a2a2a;
-      font-size: 2.5em;
-      font-weight: 700;
-      margin-bottom: 0;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-top: 2.2em;
-      color: #d94e4e;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-      margin-bottom: 0.7em;
-    }
-    h3 {
-      color: #31347a;
-      margin-top: 1.3em;
-    }
-    .aboutme, .album-desc, .skills, .exp, .section, .insp {
-      margin-bottom: 2.5em;
-      font-size: 1.12em;
-      line-height: 1.72;
-      letter-spacing: 0.01em;
-      background: #faf9fa;
-      border-radius: 14px;
-      padding: 1em 1.3em;
-      box-shadow: 0 1px 6px rgba(0,0,0,0.03);
-    }
-    .audio-player, .lead-sheet-embed { margin: 18px 0; }
-    .lead-sheet-embed { width:100%; max-width:100%; max-height:450px; border:1px solid #eee; border-radius:6px; background:#fff; }
-    .lead-sheet-empty {
-      display: flex; align-items: center; justify-content: center;
-      background: #ededed; color: #b0b0b0; font-size: 1em; height: 160px; border-radius: 8px;
-      margin: 14px 0;
-      border: 1.5px dashed #ccc;
-    }
-    .track-block {
-      margin-bottom: 2.5em;
-    }
-    .song-title {
-      font-size: 1.15em;
-      font-weight: 600;
-      margin-top: 0.6em;
-    }
-    .song-desc {
-      margin: 0.85em 0 1.5em 0;
-      color: #333;
-    }
-    .album-art {
-      width: 90%;
-      max-width: 340px;
-      display: block;
-      margin: 1.5em auto 2.1em auto;
-      border-radius: 18px;
-      box-shadow: 0 3px 14px rgba(220,87,87,0.08);
-    }
-    ul.skills-list, ul.exp-list {
-      margin-bottom:0.7em; margin-top:0.1em; padding-left:1.2em;
-    }
-    footer {
-      font-size: 1em;
-      color: #aaa;
-      text-align: center;
-      padding: 2.2em 0 1em 0;
-      margin-top: 3.5em;
-      border-top:1px solid #f2f2f2;
-    }
-    /* Responsive */
-    @media (max-width: 700px) {
-      .container { padding: 18px 4vw; }
-      h1 { font-size: 2em; }
-      .album-art { width: 99vw; max-width: 98vw;}
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header>
-  <h1>EggmanRemixedHK</h1>
+  <h1>EggManRemixed</h1>
   <nav>
     <a href="#aboutme">About Me</a>
     <a href="#album">Album</a>
@@ -132,6 +18,7 @@
     <a href="#leadsheets">Lead Sheets</a>
     <a href="#skills">Skills</a>
     <a href="#inspiration">Inspiration</a>
+    <a href="#myprocess">My Process</a>
   </nav>
 </header>
 <div class="container">
@@ -147,6 +34,10 @@
     <p>
       In the future, I hope to share my passion for unique EDM with a wider audience and help grow the EDM scene in Hong Kong.
     </p>
+    <div class="process-grid" style="margin-top:1.2em;">
+      <img src="assets/images/about-me/01.jpg" alt="About Me 1">
+      <img src="assets/images/about-me/02.JPG" alt="About Me 2">
+    </div>
   </section>
 
   <!-- ALBUM -->
@@ -165,25 +56,37 @@
   <section id="songs" class="section">
     <h2>Songs</h2>
     <div class="track-block">
-      <div class="song-title">1. Euphoric Hardstyle (Working Title)</div>
-      <img src="IMG_1750.PNG" alt="Euphoric Hardstyle Album Image" style="max-width:100%; border-radius:12px; margin:1.5em 0;">
+      <div class="track-header">
+        <div class="track-header-bg"></div>
+        <img src="assets/images/album-covers/IMG_1750.PNG" alt="Euphoric Hardstyle Album Image">
+        <div class="song-title">Back to Timeless Light</div>
+      </div>
       <div class="audio-player">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/eggmanremixedhk/trying-euphoric-hardstyle&color=%23d94e4e&auto_play=false&show_artwork=true"></iframe>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2317898831&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/eggmanremixedhk" title="EMR (EggManRemixed)" target="_blank" style="color: #cccccc; text-decoration: none;">EMR (EggManRemixed)</a> · <a href="https://soundcloud.com/eggmanremixedhk/emr-back-to-timeless-light-1" title="EMR - Back to timeless light" target="_blank" style="color: #cccccc; text-decoration: none;">EMR - Back to timeless light</a></div>
       </div>
       <div class="song-desc">
         Trying to make Euphoric Hardstyle, the energetic and melodic album. I want to bring Euphoric Hardstyle into Hong Kong culture for the mainstream. String, piano as verse part and chorus part simply use synths and some reverse FX.
       </div>
     </div>
     <div class="track-block">
-      <div class="song-title">2. Lion Dance Fusion</div>
-      <img src="IMG_1751.PNG" alt="Lion Dance Fusion Album Image" style="max-width:100%; border-radius:12px; margin:1.5em 0;">
+      <div class="track-header">
+        <div class="track-header-bg"></div>
+        <img src="assets/images/album-covers/IMG_1751.PNG" alt="Lion Dance Fusion Album Image">
+        <div class="song-title">光火瑞獅</div>
+      </div>
       <div class="audio-player">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/eggmanremixedhk/lion-dance-fusion-demo&color=%2331347a&auto_play=false&show_artwork=true"></iframe>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2317898834&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/eggmanremixedhk" title="EMR (EggManRemixed)" target="_blank" style="color: #cccccc; text-decoration: none;">EMR (EggManRemixed)</a> · <a href="https://soundcloud.com/eggmanremixedhk/emr-guang-huo-rui-shi-2" title="EMR - 光火瑞獅" target="_blank" style="color: #cccccc; text-decoration: none;">EMR - 光火瑞獅</a></div>
       </div>
       <div class="song-desc">
         Inspired in Lion Dance Drum Performance, I want to fusion the electronic elements with lion dance (醒獅鼓). The electric guitar fill up on verse. Not only glitch hop, the melodies also provide a jazz vibe to make Electro Swing type of music.
+      </div>
+      <div class="audio-player">
+        <a href="https://youtube.com/shorts/ns5OKlRx8bw" target="_blank" rel="noopener" class="yt-thumb-link">
+          <img src="https://img.youtube.com/vi/ns5OKlRx8bw/hqdefault.jpg" alt="Lion Dance Fusion - Watch on YouTube" style="width:100%; max-width:360px; border-radius:10px; display:block; margin:0 auto;">
+          <div class="yt-play-btn">▶ Watch on YouTube</div>
+        </a>
       </div>
     </div>
   </section>
@@ -192,16 +95,14 @@
   <section id="leadsheets" class="section">
     <h2>Lead Sheets</h2>
     <div>
-      <div class="song-title">Euphoric Hardstyle</div>
-      <div class="lead-sheet-embed lead-sheet-empty">
-        Lead Sheet not available yet. <br>(Upload "leadsheet1.png" or "leadsheet1.pdf" to display here)
-      </div>
+      <div class="song-title">Back to Timeless Light</div>
+      <iframe src="assets/leadsheets/Song1-Score.pdf" class="lead-sheet-embed" height="450"></iframe>
+      <a href="assets/leadsheets/Song1-Score.pdf" download class="download-btn">⬇ Download Lead Sheet</a>
     </div>
     <div>
-      <div class="song-title">Lion Dance Fusion</div>
-      <div class="lead-sheet-embed lead-sheet-empty">
-        Lead Sheet not available yet. <br>(Upload "leadsheet2.png" or "leadsheet2.pdf" to display here)
-      </div>
+      <div class="song-title">光火瑞獅</div>
+      <iframe src="assets/leadsheets/Song2-Score.pdf" class="lead-sheet-embed" height="450"></iframe>
+      <a href="assets/leadsheets/Song2-Score.pdf" download class="download-btn">⬇ Download Lead Sheet</a>
     </div>
   </section>
 
@@ -226,15 +127,30 @@
   <!-- INSPIRATION -->
   <section id="inspiration" class="insp section">
     <h2>Inspiration</h2>
-    <p>
-      (Describe your inspirations here, e.g., how Hong Kong culture and modern dance music combine for you, or any artists, films, or experiences that inspire your work!)
-    </p>
+    <h3>Back to Timeless Light</h3>
+    <p>Trying to make Euphoric Hardstyle, the energetic and melodic album. I want to bring Euphoric Hardstyle into Hong Kong culture for mainstream. String, piano as verse part and chorus part simply use synths and some reverse FX.</p>
+    <h3>光火瑞獅</h3>
+    <p>Inspired in Lion Dance Drum Performance, I want to fusion the electronic elements with lion dance (醒獅鼓). The electric guitar fill up on verse. Not only glitch hop, the melodies also provide a jazz vibe to make Electro Swing type of music.</p>
+  </section>
+
+  <!-- MY PROCESS -->
+  <section id="myprocess" class="section">
+    <h2>My Process</h2>
+    <h3>Back to Timeless Light</h3>
+    <div class="process-grid">
+      <img src="assets/images/my-process/song1-process1.png" alt="Song 1 Process 1">
+      <img src="assets/images/my-process/song1-process2.png" alt="Song 1 Process 2">
+    </div>
+    <h3>光火瑞獅</h3>
+    <div class="process-grid">
+      <img src="assets/images/my-process/song2-process1.png" alt="Song 2 Process 1">
+      <img src="assets/images/my-process/song2-process2.png" alt="Song 2 Process 2">
+    </div>
   </section>
 </div>
 <footer>
-  &copy; 2026 EggmanRemixedHK • 
-  <a href="mailto:your@email.com" style="color:#888;text-decoration:underline;">Contact</a> • 
-  <a href="https://github.com/HoLongMan" target="_blank" style="color:#888;text-decoration:underline;">GitHub</a>
+  &copy; 2026 EggManRemixed • 
+  <a href="mailto:mhl041106@gmail.com" style="color:#888;text-decoration:underline;">Contact</a>
 </footer>
 </body>
 </html>
